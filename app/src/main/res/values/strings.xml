@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">陈朝晖</string>
+    <string name="name">人员定位系统移动端软件</string>
+    <string name="action_settings_dating">大厅</string>
+    <string name="action_settings_loudao">楼道</string>
+    <string name="action_settings_sushe">宿舍</string>
+    <string name="scan">建立离线数据库</string>
+    <string name="localize">在线定位</string>
+    <string name="login_name">登录名</string>
+    <string name="login_button_text">登录</string>
+    <string name="login_password">登录密码</string>
+    <string name="ip_config">IP</string>
+</resources>

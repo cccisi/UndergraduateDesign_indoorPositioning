@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <chen.zhaohui.wifipositioning.FloorPlanView
+        android:id="@+id/viewFloorPlan"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/LinearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:padding="5dp"
+            android:text="定位坐标结果"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <TextView
+            android:id="@+id/txtEstCoord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="P(__ , __)米"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColorHint="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/LinearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <ToggleButton
+            android:id="@+id/toggleScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定位"
+            android:textOff="开始"
+            android:textOn="关闭"
+            android:layout_weight="0.23" />
+
+        <ToggleButton
+            android:id="@+id/toggleRotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="测向"
+            android:textOff="测向"
+            android:textOn="测向"
+            android:layout_weight="0.35" />
+        
+        <ToggleButton
+            android:id="@+id/toggleTrustRegion"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="误差"
+            android:textOff="误差"
+            android:textOn="误差"
+            android:layout_weight="0.59" />
+
+        <ToggleButton
+            android:id="@+id/toggleOrientationFilter"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="方向"
+            android:textOff="方向"
+            android:textOn="方向"
+            android:layout_weight="0.71" />
+        
+        <ToggleButton
+            android:id="@+id/togglePoint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="点"
+            android:textOff="点"
+            android:textOn="点" />
+
+        <ToggleButton
+            android:id="@+id/toggleGrid"
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"
+            android:text="格"
+            android:textOff="格"
+            android:textOn="格"
+            android:layout_weight="43.26" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="111.11" >
+
+            <Button
+                android:id="@+id/btnInfo"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="？" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

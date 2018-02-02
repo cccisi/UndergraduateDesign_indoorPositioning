@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:alex="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_settings_dating"
+        android:orderInCategory="100"
+
+        android:title="@string/action_settings_dating"/>
+    <item
+        android:id="@+id/action_settings_loudao"
+        android:orderInCategory="100"
+
+        android:title="@string/action_settings_loudao"/>
+    <item
+        android:id="@+id/action_settings_sushe"
+        android:orderInCategory="100"
+
+        android:title="@string/action_settings_sushe"/>
+</menu>
